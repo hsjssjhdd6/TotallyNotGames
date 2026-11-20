@@ -375,6 +375,31 @@ footer {
       </div>
     </div>
 
+<!-- GAME THREE: SNAKE -->
+<div class="game-card">
+  <div class="game-icon">🐍</div>
+  <h3>Snake</h3>
+  <p>Eat the food, grow longer and beat your high score!</p>
+
+  <div class="mini-game">
+    <canvas id="snakeCanvas"
+      width="300"
+      height="300"
+      style="background:#080812; border:2px solid #7654c8; border-radius:10px; max-width:100%;">
+    </canvas>
+
+    <p id="snakeScore">Score: 0</p>
+
+    <button class="game-button" onclick="startSnake()">
+      Start Snake!
+    </button>
+
+    <div class="game-status" id="snakeMessage">
+      Ready to play? 🐍
+    </div>
+  </div>
+</div>
+
   </div>
 </section>
 
