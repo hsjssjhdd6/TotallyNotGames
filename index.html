@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TotallyNotGames</title>
+<style>
+  body {
+    margin: 0;
+    background: #10101c;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  header {
+    background: #22213a;
+    padding: 25px;
+  }
+  h1 { color: #b58cff; }
+  .game {
+    background: #25243a;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 15px;
+    max-width: 400px;
+  }
+  button {
+    background: #8755ed;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 28px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  button:hover { background: #a47aff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🎮 TotallyNotGames 💀</h1>
+  <p>Definitely not a gaming website.</p>
+</header>
+
+<h2>Welcome to the most suspicious arcade!</h2>
+
+<div class="game">
+  <h2>🖱️ Clicker Game</h2>
+  <p>Destroy your mouse. Not literally.</p>
+  <h2>Score: <span id="score">0</span></h2>
+  <button onclick="addPoint()">CLICK ME 💀</button>
+</div>
+
+<script>
+  let score = 0;
+  function addPoint() {
+    score++;
+    document.getElementById("score").textContent = score;
+  }
+</script>
+</body>
+</html>
